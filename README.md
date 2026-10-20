@@ -1,4 +1,4 @@
-# crayonbox
+# CrayonBox
 
 Image and video generation for any agent. One stdio MCP server, one shared config,
 any OpenAI-compatible provider — bring your own base URL and key, models are

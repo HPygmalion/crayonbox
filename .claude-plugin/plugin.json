@@ -1,6 +1,6 @@
 {
   "name": "crayonbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Image and video generation MCP server for any OpenAI-compatible provider: own base URL and key, models picked from /models.",
   "author": {
     "name": "HPygmalion",
@@ -34,5 +34,6 @@
       "description": "Empty = auto-pick the best video model from the provider's /models list.",
       "default": ""
     }
-  }
+  },
+  "displayName": "CrayonBox"
 }
