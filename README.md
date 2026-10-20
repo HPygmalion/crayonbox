@@ -9,23 +9,16 @@ Qoder, Codex, Cursor, Gemini CLI, and any other client.
 
 ## Ask your agent to install it
 
-Copy one line into Claude Code, Claude Desktop, ChatGPT Desktop, Codex, Qoder,
-or any agent that can run commands:
-
 ```text
-Install CrayonBox from https://github.com/HPygmalion/crayonbox — clone it to ~/.crayonbox, register `python3 ~/.crayonbox/scripts/crayonbox.py` as a stdio MCP server named crayonbox in your own MCP settings, then tell me to run `python3 ~/.crayonbox/scripts/crayonbox.py setup` in a terminal so I can enter my API key.
+Install CrayonBox: https://github.com/HPygmalion/crayonbox
 ```
 
 ```text
-帮我安装 CrayonBox：把 https://github.com/HPygmalion/crayonbox 克隆到 ~/.crayonbox，把 `python3 ~/.crayonbox/scripts/crayonbox.py` 注册成你 MCP 设置里名为 crayonbox 的 stdio 服务器，然后提醒我在终端运行 `python3 ~/.crayonbox/scripts/crayonbox.py setup` 输入 API key。
+帮我安装 CrayonBox：https://github.com/HPygmalion/crayonbox
 ```
 
-Claude Code and Claude Desktop users can skip the clone and install the plugin
-instead:
-
-```text
-Install the CrayonBox plugin: run `claude plugin marketplace add HPygmalion/crayonbox` and `claude plugin install crayonbox@crayonbox`. When the configuration form appears, I will fill in my API base URL and API key there.
-```
+The agent reads this README and takes the route that fits it: the plugin for
+Claude Code and Claude Desktop, the stdio server for everything else.
 
 ## Requirements
 
