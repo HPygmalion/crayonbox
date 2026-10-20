@@ -1,0 +1,38 @@
+{
+  "name": "crayonbox",
+  "version": "1.0.0",
+  "description": "Image and video generation MCP server for any OpenAI-compatible provider: own base URL and key, models picked from /models.",
+  "author": {
+    "name": "HPygmalion",
+    "url": "https://github.com/HPygmalion"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "userConfig": {
+    "base_url": {
+      "type": "string",
+      "title": "API base URL",
+      "description": "OpenAI-compatible image/video API base, e.g. https://api.agnes-ai.cn/v1",
+      "default": "https://api.agnes-ai.cn/v1"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API key",
+      "description": "Provider key, sent as Bearer. Stored in secure storage.",
+      "sensitive": true,
+      "required": true
+    },
+    "image_model": {
+      "type": "string",
+      "title": "Image model",
+      "description": "Empty = auto-pick the best image model from the provider's /models list.",
+      "default": ""
+    },
+    "video_model": {
+      "type": "string",
+      "title": "Video model",
+      "description": "Empty = auto-pick the best video model from the provider's /models list.",
+      "default": ""
+    }
+  }
+}

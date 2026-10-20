@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "crayonbox": {
+      "command": "python3",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/crayonbox.py"],
+      "env": {
+        "CRAYONBOX_BASE_URL": "${user_config.base_url}",
+        "CRAYONBOX_API_KEY": "${user_config.api_key}",
+        "CRAYONBOX_IMAGE_MODEL": "${user_config.image_model}",
+        "CRAYONBOX_VIDEO_MODEL": "${user_config.video_model}"
+      }
+    }
+  }
+}

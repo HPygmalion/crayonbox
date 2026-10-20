@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "crayonbox",
+  "description": "Image and video generation for any OpenAI-compatible provider.",
+  "owner": {
+    "name": "HPygmalion",
+    "url": "https://github.com/HPygmalion"
+  },
+  "plugins": [
+    {
+      "name": "crayonbox",
+      "description": "Generate and edit images, generate videos, and poll long jobs with your own base URL and API key.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
